@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Quiropráctico</title>
+    <link rel="icon" type="image/png" href="/assets/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <button class="hamburger-btn" aria-label="Abrir menú">
+            <span class="hamburger-icon"></span>
+        </button>
+        <div class="logo" title="Ir al inicio">
+            <a href="index.html">
+                <img src="/assets/img/logo.png" alt="Logo Centro Quiropráctico">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">INICIO</a></li>
+                <li><a href="preguntas.html" class="nav-link">CONSULTAS FRECUENTES</a></li>
+                <li><a href="ubicacion.html" class="nav-link">¿DÓNDE ATENDEMOS?</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="consultas-frecuentes">
+        <div class="contenedor">
+            <h2>CONSULTAS FRECUENTES</h2>
+            <p>Respuestas claras a las preguntas más comunes</p>
+
+            <!-- Campo de búsqueda -->
+            <input type="text" id="searchInput" placeholder="Buscar consultas..." />
+
+            <div id="resultCount">
+                Total de consultas encontradas: <span id="count">0</span>
+            </div>
+
+            <div id="noResultsMessage" style="display: none;">No se encontraron resultados coincidentes. <a href="preguntas.html">Intenta nuevamente</a>.</div>
+
+            <div id="preguntasContainer" class="preguntas">
+                <!-- Las preguntas se llenarán aquí dinámicamente -->
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Cualquier persona puede hacer quiropraxia? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>Claramente, sí. Los únicos requisitos para hacer quiropraxia son tener sistema nervioso y columna vertebral. Todo el mundo debería chequear su columna para mejorar infinidad de aspectos.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Por qué es tan importante tener la columna alineada? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>El cerebro maneja el funcionamiento de todo nuestro cuerpo, por medio de la médula espinal y los nervios. Por lo tanto, si la columna vertebral está alineada y no hay ninguna interferencia nerviosa, todo nuestro cuerpo va a funcionar mejor. La quiropraxia se encarga de liberar esos canales para que el cuerpo se desempeñe como corresponde.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Por qué hay gente que le tiene miedo a la quiropraxia? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>Es algo frecuente que las personas tengan miedo de comenzar quiropraxia. Para despejar ese miedo es aconsejable investigar, estudiar y hablar con gente que ya tuvo su experiencia. Es una profesión segura y que tiene muchísimos años.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Por qué es segura la quiropraxia? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>La quiropraxia es segura desde su nacimiento, hace más de 100 años. Primero se analiza para detectar la supuesta subluxación vertebral y luego poder ser corregida. Dicho análisis se puede realizar mediante una resonancia magnética, una radiografía, la palpación muscular y elementos para determinar la termografía de la columna vertebral.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Puedo hacer quiropraxia si tengo hernias de disco? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>Las vértebras se articulan con un disco intervertebral en el medio, el cual actúa como una especie de amortiguador. Un disco cuenta con un anillo fibroso que lo recubre y dentro posee un núcleo pulposo. Por lo tanto, la quiropraxia puede ser una opción efectiva para tratar hernias de disco, ya que se centra en corregir las fuerzas mecánicas incorrectas que causan la hernia, en lugar de simplemente tratar los síntomas.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Cada cuánto tiempo debo corregir mi columna? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>Al principio, la frecuencia tiene que ser más contínua, ya que la columna vertebral nunca fue corregida y necesita acostumbrarse a que cada pieza esté en su lugar. Generalmente, se trata de una vez por semana durante el primer mes y medio. Luego, el tiempo ideal para que la columna se mantenga alineada es de de dos o tres meses entre cada ajuste. Obviamente, esto dependerá de cada persona y de las exigencias de cada una.</p>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <button class="pregunta-btn">
+                        ¿Desde que edad se puede hacer quiropraxia? <span class="icono">+</span>
+                    </button>
+                    <div class="respuesta">
+                        <p>No hay edad para empezar. La quiropraxia es recomendable desde nuestro nacimiento. Nunca es tarde para conocerla y comenzar a corregir nuestra columna vertebral, para asi poder obtener beneficios y un mejor funcionamiento del cuerpo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">
+        <img src="/assets/img/arriba.png" alt="Ir Arriba">
+    </button>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://wa.me/5493445404518" target="_blank">WhatsApp</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/nicosaenzquiropractico/" target="_blank">Instagram</a>
+            <span>|</span>
+            <a href="mailto:centroquiropracticonicolas@gmail.com" target="_blank">Correo electrónico</a>
+        </div>
+        <div class="footer-rights">
+            © 2024 Centro Quiropráctico Nicolás
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script src="script.js"></script>
